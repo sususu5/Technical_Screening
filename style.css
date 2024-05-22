@@ -1,0 +1,253 @@
+body {
+    background-color: #E8E8FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2em;
+    margin: 0;
+}
+
+.main-header {
+    width: 50%;
+    background: linear-gradient(#8080C0, #DA70D6);
+    color: #FFE4E1;
+    font-size: 30px;
+    padding: 15px;
+    margin: 30px auto;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing-effect {
+    color: #DA70D6;
+    text-align: center;
+    width: 380px;
+    height: 40px;
+    font-size: 30px;
+    animation: typingWords 7s steps(21) infinite, cursor 0.5s steps(1) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #000;
+}
+
+@keyframes typingWords {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.circle-1 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: #8080C0;
+    color: #fff;
+    margin: 30px auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.circle-1 h1 {
+    color: #FFE4E1;
+    font-size: 30px;
+    text-align: center;
+}
+
+.circle-1 ul {
+    list-style-type: none;
+}
+
+.circle-1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.circle-2 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: #FF7F50;
+    color: #fff;
+    margin: 30px auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.circle-2 h1 {
+    color: #FFE4E1;
+    font-size: 30px;
+    text-align: center;
+}
+
+.circle-2 ul {
+    list-style-type: none;
+}
+
+.album-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+}
+
+.album-container .image-container {
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    animation: change 30s ease infinite;
+}
+
+.album-container .image-container img {
+    width: 200px;
+    height: 100%;
+}
+
+@keyframes change {
+
+    0%,
+    15% {
+        transform: translateX(0);
+    }
+
+    16.67%,
+    31.67% {
+        transform: translateX(-200px);
+    }
+
+    33.34%,
+    48.34% {
+        transform: translateX(-400px);
+    }
+
+    50.01%,
+    65.01% {
+        transform: translateX(-600px);
+    }
+
+    66.68%,
+    81.68% {
+        transform: translateX(-400px);
+    }
+
+    83.35%,
+    98.35% {
+        transform: translateX(-200px);
+    }
+
+    100.02% {
+        transform: translateX(0);
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0;
+}
+
+.circle-button {
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FFC0CB;
+    margin: 50px 1px;
+    box-shadow: 0 12px #8080C0;
+    font-size: 25px;
+    text-align: center;
+    color: #6262A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.15s;
+}
+
+.circle-button:hover {
+    background-color: #E1A2AD;
+}
+
+.circle-button:active {
+    background-color: #E1A2AD;
+    box-shadow: 0 8px #6262A2;
+    transform: translateY(4px);
+}
+
+#copyEmailInput {
+    display: none;
+}
+
+.main-footer {
+    background: #8080C0;
+    color: #FFE4E1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.back-to-top-button {
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 192, 203, 0.5);
+    margin: 50px 1px;
+    font-size: 25px;
+    text-align: center;
+    color: #6262A2;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.back-to-top-button:hover {
+    background-color: rgba(225, 162, 173, 0.5);
+}
+
+.back-to-top-button:active {
+    background-color: rgba(225, 162, 173, 0.5);
+}
